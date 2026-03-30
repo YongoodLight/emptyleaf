@@ -27,13 +27,24 @@
           <span class="brand-mark">01</span>
           <span id="brandName">emptyleaf.studio</span>
         </a>
-        <nav class="nav" aria-label="主导航">
-          <a href="#about">关于</a>
-          <a href="#services">服务</a>
-          <a href="#projects">作品</a>
-          <a href="#contact">联系</a>
-          <a href="#experience">经历</a>
-        </nav>
+        <div class="topbar-tools">
+          <nav class="nav" aria-label="主导航">
+            <a href="#about">关于</a>
+            <a href="#services">服务</a>
+            <a href="#projects">作品</a>
+            <a href="#contact">联系</a>
+            <a href="#experience">经历</a>
+          </nav>
+          <button
+            class="editor-toggle"
+            id="editorToggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="editorLayer"
+          >
+            编辑站点
+          </button>
+        </div>
       </header>
 
       <main id="home">
@@ -158,6 +169,50 @@
         <p id="footerText">© 2026 emptyleaf.studio</p>
         <a href="#home">回到顶部</a>
       </footer>
+    </div>
+
+    <div class="editor-layer" id="editorLayer" hidden>
+      <button
+        class="editor-backdrop"
+        id="editorBackdrop"
+        type="button"
+        aria-label="关闭编辑器"
+      ></button>
+      <aside
+        class="editor-drawer"
+        id="editorDrawer"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="editorTitle"
+      >
+        <div class="editor-header">
+          <div>
+            <p class="eyebrow">Live Editor</p>
+            <h2 id="editorTitle">内容编辑器</h2>
+            <p class="editor-description">
+              修改后会实时预览，并自动保存在当前浏览器。你也可以导出 JSON 备份。
+            </p>
+          </div>
+          <button class="editor-close" id="editorClose" type="button" aria-label="关闭">
+            关闭
+          </button>
+        </div>
+
+        <div class="editor-toolbar">
+          <button class="editor-tool" id="editorExport" type="button">导出 JSON</button>
+          <label class="editor-tool editor-import" for="editorImport">导入 JSON</label>
+          <input id="editorImport" type="file" accept="application/json,.json" hidden />
+          <button class="editor-tool editor-tool-muted" id="editorReset" type="button">
+            恢复模板
+          </button>
+        </div>
+
+        <p class="editor-status" id="editorStatus">
+          编辑器已就绪，修改会自动保存在这台设备的浏览器里。
+        </p>
+
+        <form class="editor-form" id="editorForm"></form>
+      </aside>
     </div>
 
     <script src="./content.js"></script>
