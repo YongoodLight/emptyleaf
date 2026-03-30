@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="emptyleaf studio favicon">
+  <rect width="64" height="64" rx="18" fill="#17393d" />
+  <path
+    d="M18 37c0-11 8.8-19 22-19-1.1 11.6-7 23.2-20.6 28.4"
+    fill="none"
+    stroke="#f6eee2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="4"
+  />
+  <path
+    d="M25 24c8.6 1.3 13.9 5.7 16.4 12.9"
+    fill="none"
+    stroke="#bf5b2d"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="4"
+  />
+</svg>

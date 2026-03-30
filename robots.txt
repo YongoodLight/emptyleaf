@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: emptyleaf.studio
+Sitemap: https://emptyleaf.studio/sitemap.xml

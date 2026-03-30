@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1c2926" />
+    <meta
+      name="description"
+      content="emptyleaf.studio 是一个安静、克制、注重表达的个人工作室网站，用来展示简介、服务、作品与合作方式。"
+    />
+    <meta property="og:title" content="emptyleaf.studio" />
+    <meta
+      property="og:description"
+      content="一个安静、克制、注重表达的个人工作室网站。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://emptyleaf.studio/" />
+    <link rel="canonical" href="https://emptyleaf.studio/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>emptyleaf.studio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#home">
+          <span class="brand-mark">01</span>
+          <span id="brandName">emptyleaf.studio</span>
+        </a>
+        <nav class="nav" aria-label="主导航">
+          <a href="#about">关于</a>
+          <a href="#services">服务</a>
+          <a href="#projects">作品</a>
+          <a href="#contact">联系</a>
+          <a href="#experience">经历</a>
+        </nav>
+      </header>
+
+      <main id="home">
+        <section class="hero panel">
+          <div class="hero-copy">
+            <p class="eyebrow" id="heroEyebrow">Personal Studio / Portfolio</p>
+            <h1 id="heroTitle">A quiet studio for thoughtful digital work.</h1>
+            <p class="hero-status" id="heroAvailability">
+              Open to focused collaborations.
+            </p>
+            <p class="hero-text" id="heroDescription"></p>
+            <div class="hero-actions">
+              <a class="button button-primary" id="primaryAction" href="#projects">
+                浏览作品
+              </a>
+              <a class="button button-secondary" id="secondaryAction" href="#services">
+                查看服务
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero-card">
+            <p class="card-label">Studio Notes</p>
+            <p class="hero-role" id="heroRole">创意开发 / 设计 / 内容表达</p>
+            <ul class="hero-highlights" id="heroHighlights"></ul>
+          </aside>
+        </section>
+
+        <section class="stats-grid">
+          <article class="stat-card panel reveal">
+            <p class="stat-label">聚焦方向</p>
+            <p class="stat-value" id="focusArea">独立工作室</p>
+          </article>
+          <article class="stat-card panel reveal">
+            <p class="stat-label">代表角色</p>
+            <p class="stat-value" id="mainRole">创意方向 / 设计 / 前端</p>
+          </article>
+          <article class="stat-card panel reveal">
+            <p class="stat-label">所在城市</p>
+            <p class="stat-value" id="location">上海，中国</p>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel section-card reveal" id="about">
+            <div class="section-heading">
+              <p class="section-index">01</p>
+              <h2>关于工作室</h2>
+            </div>
+            <p class="section-text" id="aboutText"></p>
+            <div class="tag-list" id="skillTags"></div>
+          </article>
+
+          <article class="panel section-card reveal" id="contact">
+            <div class="section-heading">
+              <p class="section-index">02</p>
+              <h2>联系方式</h2>
+            </div>
+            <div class="contact-list" id="contactList"></div>
+          </article>
+        </section>
+
+        <section class="section-block" id="services">
+          <div class="section-heading reveal">
+            <p class="section-index">03</p>
+            <h2>服务内容</h2>
+          </div>
+          <div class="service-list" id="serviceList"></div>
+        </section>
+
+        <section class="section-block" id="projects">
+          <div class="section-heading reveal">
+            <p class="section-index">04</p>
+            <h2>精选作品</h2>
+          </div>
+          <div class="project-list" id="projectList"></div>
+        </section>
+
+        <section class="section-block" id="process">
+          <div class="section-heading reveal">
+            <p class="section-index">05</p>
+            <h2>合作方式</h2>
+          </div>
+          <div class="process-list" id="processList"></div>
+        </section>
+
+        <section class="section-block" id="experience">
+          <div class="section-heading reveal">
+            <p class="section-index">06</p>
+            <h2>经历时间线</h2>
+          </div>
+          <div class="timeline" id="timeline"></div>
+        </section>
+
+        <section class="closing-banner panel reveal" aria-labelledby="closingTitle">
+          <div class="closing-copy">
+            <p class="eyebrow" id="closingEyebrow">Open for selective projects</p>
+            <h2 id="closingTitle">把 emptyleaf.studio 变成你的正式线上名片。</h2>
+            <p class="section-text" id="closingDescription"></p>
+            <p class="closing-note" id="closingNote"></p>
+          </div>
+          <div class="closing-actions">
+            <a
+              class="button button-primary"
+              id="closingPrimaryAction"
+              href="mailto:hello@example.com"
+            >
+              发邮件联系
+            </a>
+            <a
+              class="button button-secondary"
+              id="closingSecondaryAction"
+              href="#services"
+            >
+              查看服务
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p id="footerText">© 2026 emptyleaf.studio</p>
+        <a href="#home">回到顶部</a>
+      </footer>
+    </div>
+
+    <script src="./content.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
