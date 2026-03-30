@@ -3,7 +3,7 @@ window.siteContent = {
     title: "emptyleaf.studio",
     description:
       "emptyleaf.studio 是一个安静、克制、注重表达的个人工作室网站，用来展示简介、服务、作品与合作方式。",
-    url: "https://emptyleaf.studio/",
+    url: "https://yongoodlight.github.io/emptyleaf/",
     themeColor: "#1c2926",
   },
   profile: {
@@ -35,8 +35,8 @@ window.siteContent = {
     contacts: [
       {
         label: "网址",
-        value: "emptyleaf.studio",
-        href: "https://emptyleaf.studio",
+        value: "yongoodlight.github.io/emptyleaf/",
+        href: "https://yongoodlight.github.io/emptyleaf/",
       },
       {
         label: "邮箱",
@@ -181,7 +181,7 @@ window.siteContent = {
     description:
       "现在这版已经适合正式上线。接下来只要替换成你的真实简介、项目和联系方式，就可以作为个人工作室的主站使用。",
     note:
-      "如果你决定用 GitHub Pages 发布，这个仓库也已经预留好了自定义域名相关文件。",
+      "目前先使用 GitHub Pages 默认地址访问，后续再接回 emptyleaf.studio 也很方便。",
     primary: {
       label: "发邮件联系",
       href: "mailto:hello@example.com",

@@ -2,16 +2,25 @@
 
 一个零依赖的静态个人工作室网站。当前目录里的文件可以直接作为 GitHub Pages 的发布源。
 
+当前默认访问地址：
+
+- `https://yongoodlight.github.io/emptyleaf/`
+
 ## 文件说明
 
 - `index.html`: 页面结构
 - `styles.css`: 页面样式
 - `content.js`: 站点内容配置
 - `main.js`: 内容渲染与滚动动效
-- `CNAME`: GitHub Pages 自定义域名配置
 - `robots.txt` / `sitemap.xml`: 基础 SEO 文件
 
-## 让 `https://emptyleaf.studio` 可访问
+## 当前先用 GitHub Pages 地址
+
+仓库发布后，可以先直接使用：
+
+- `https://yongoodlight.github.io/emptyleaf/`
+
+## 以后再接 `https://emptyleaf.studio`
 
 最省事的方式是使用 GitHub Pages。
 
@@ -35,7 +44,7 @@
 
 补充说明：
 
-- `CNAME` 文件已经在仓库里，内容是 `emptyleaf.studio`。
+- 如果你切回自定义域名，需要重新加入 `CNAME` 文件，内容写成 `emptyleaf.studio`。
 - 如果你以后改用 GitHub Actions 发布，仍然需要在 GitHub Pages 设置页里手动填自定义域名。
 - DNS 生效和 HTTPS 签发通常需要一点时间，最长可能接近 24 小时。
 
